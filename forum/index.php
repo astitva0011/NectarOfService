@@ -6,14 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NectarOfService</title>
     <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            height: 100vh;
-            width: 100vw;
-            background: #7b4397;
-            margin: 0;
-            padding: 0;
+        body {           
+     font-family: 'Poppins', sans-serif;
+     height: 100vh;
+     width: 100vw;
+     margin: 0;
+     padding: 0;
+     background: linear-gradient(135deg, #84acc4 25%, #ffb443 25%,#ffb443 50%, #f9eaa9 50%,  #f9eaa9 75%,#7b4397 75%);
         }
+        
 
         h1 {
             text-align: center;
@@ -27,6 +28,7 @@
             align-items: center;
             justify-content: center;
             margin-top: 20px;
+
         }
 
         .overlay {
@@ -70,8 +72,8 @@
 
         .form-popup textarea {
             width: 80%;
-            padding: 15px;
-            font-size: 15px;
+            padding: 25px;
+            font-size: 20px;
             background: #7b4397;
             border-radius: 30px;
             font-weight: 800;
@@ -80,15 +82,16 @@
             margin-bottom: 20px;
             border: none;
             color: #fff;
+            position: center;
         }
 
         .form-popup button {
-            width: 80%;
-            padding: 15px;
-            font-size: 15px;
+            width: 50%;
+            padding: 5px;
+            font-size: 10px;
             background: #7b4397;
-            border-radius: 30px;
-            font-weight: 800;
+            border-radius: 25px;
+            font-weight: 500;
             box-shadow: 5px 5px 0px 0px #000;
             cursor: pointer;
             border: none;
@@ -110,6 +113,7 @@
             margin-right: 10px;
             border: none;
             border-radius: 5px;
+            position: center;
         }
 
         .sidebar button {
@@ -132,9 +136,11 @@
         .question-list {
             width: 80%;
             margin-top: 20px;
+    
         }
 
         .question {
+            color: #fff;
             background-color: #fff;
             padding: 20px;
             margin-bottom: 20px;
@@ -148,8 +154,25 @@
         }
 
         .author {
-            color: #333;
+            color: #000000;
         }
+        .askq {
+        width: calc(50% - 70px);
+    padding: 15px;
+    font-size: 15px;
+    background:  #7b4397;
+    border-radius: 30px;
+    font-weight: 800;
+    box-shadow: 5px 5px 0px 0px #000;
+    cursor: pointer;
+    border: none;
+    color: #000000;
+}
+
+.askq:hover {
+    background-color: #6a3781;
+}
+
     </style>
 </head>
 <body>
@@ -182,8 +205,8 @@
 
         <section class="question-list">
             <div class="question">
-                <h2>Top Questions</h2>
-                <p class="author">
+                <h2>Latest Question</h2>
+                <p class="author"></a>
                     <?php include 'show_questions.php'; ?>
                 </p>
             </div>

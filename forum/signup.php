@@ -1,4 +1,6 @@
+
 <?php
+//session start
 
 // Include the dbconnect.php file
 require_once 'dbconnect.php';

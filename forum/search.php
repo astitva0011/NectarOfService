@@ -2,7 +2,7 @@
 // Include the database connection script
 include 'dbconnect.php';
 
-// Check if the search query is set
+// Check if the search query is set and not empty
 if (isset($_GET['query']) && !empty($_GET['query'])) {
     // Sanitize the search query to prevent SQL injection
     $search_query = $_GET['query'];
@@ -35,6 +35,12 @@ if (isset($_GET['query']) && !empty($_GET['query'])) {
 
     // Close the statement
     $stmt->close();
+} else {
+    // If the search query is empty, display an error message
+    echo "<script>";
+    echo "alert('Please enter a search query.');";
+    echo "window.location.href = 'index.php';"; // Redirect to index.php
+    echo "</script>";
 }
 
 // Close the database connection

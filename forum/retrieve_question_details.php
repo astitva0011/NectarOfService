@@ -1,7 +1,5 @@
 
 <?php
-
-  //include 'dbconnect.php';
     include 'dbconnect.php';
 
 // Initialize variables
@@ -28,7 +26,7 @@ if(isset($_GET['question_id']) && is_numeric($_GET['question_id'])) {
         $stmt->bind_param("i", $question_id);
         $stmt->execute();
         $comments_result = $stmt->get_result();
-    } else {
+    } else { 
         // No question found with the given question_id
         echo "No question found.";
     }

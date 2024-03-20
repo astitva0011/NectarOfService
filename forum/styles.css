@@ -1,38 +1,55 @@
-/* Styles for the body */
-@import url('https://fonts.googleapis.com/css?family=Poppins:ital,Poppins:400,500,600,700,800,900');
+/* General styles */
 body {
-    font-family: poppins, sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #4799ae;
-    
-  }
-  
-  /* Styles for the header */
-  h1 {
+    background: linear-gradient(135deg, #84acc4 25%, #ffb443 25%,#ffb443 50%, #f9eaa9 50%,  #f9eaa9 75%,#7b4397 75%);
+   
+}
+
+h1, h2 {
     text-align: center;
-  }
-  
-  /* Styles for the main content */
-  main {
+    color: #333;
+}
+
+p {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Styles for main content */
+main {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #4799ae;
-  }
-  
-  /* Styles for the button */
-  button {
+    background-color: transparent;
+}
+
+/* Styles for buttons */
+button, button[type="submit"] {
     padding: 10px 20px;
     background-color: #0015ff;
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-  }
-  
-  /* Styles for the overlay */
-  .overlay {
+}
+
+button:hover, button[type="submit"]:hover {
+    background-color: #0000ff;
+}
+
+/* Styles for overlay */
+.overlay {
     position: fixed;
     top: 0;
     left: 0;
@@ -40,10 +57,10 @@ body {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     display: none;
-  }
-  
-  /* Styles for the form popup */
-  .form-popup {
+}
+
+/* Styles for form popup */
+.form-popup {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -53,10 +70,10 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     display: none;
-  }
-  
-  /* Styles for the close button */
-  .close {
+}
+
+/* Styles for close button */
+.close {
     position: absolute;
     top: 5px;
     right: 5px;
@@ -65,407 +82,190 @@ body {
     font-size: 18px;
     cursor: pointer;
     background-color: #ff0000;
-  }
-  
-  /* Styles for the form container */
-  .form-container {
+}
+
+/* Styles for form container */
+.form-container {
     text-align: center;
-  }
-  
-  /* Styles for the input textarea */
-  textarea {
-    width: 100%;
-    padding: 10px;
+}
+
+/* Styles for input textarea */
+textarea {
+    width: auto;
+    padding: 1px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-  }
-  
-  /* Styles for the submit button */
-  .btn {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  /* Styles for the question list */
-  .question-list {
+}
+
+/* Styles for question list */
+.question-list {
     margin-top: 20px;
-  }
-  
-  /* Styles for the question */
-  .question {
+}
+
+/* Styles for question */
+.question {
     margin-bottom: 20px;
-  }
-  
-  /* Styles for the author */
-  .author {
+    background-color: #4CAF50;
+    padding: 15px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 0px 0px #000;
+}
+
+.question h2 {
+    color: #000000;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Styles for author */
+.author {
+    
     margin-top: 10px;
     font-style: italic;
-  }
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #000000;
-    padding: 20px;
 }
 
-h1, h2 {
-    text-align: center;
-    color: #333;
-}
-
-.question, .comment {
-    background-color: #000000;
-    padding: 15px;
-    margin-bottom: 15px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.question p, .comment p {
-    margin: 0;
-}
-
-.question p strong, .comment p strong {
-    font-weight: bold;
-}
-
+/* Styles for comment */
 .comment {
-    border-left: 3px solid #007bff; /* Change color as per your preference */
-}
-
-.comment_form {
-    background-color: #000000;
+    margin-bottom: 1px;
+    background-color: #4CAF50;
     padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.comment_form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #f9f9f9;
-    transition: border-color 0.3s ease;
-}
-
-.comment_form textarea:focus {
-    outline: none;
-    border-color: #007bff;
-}
-
-.comment_form button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.comment_form button:hover {
-    background-color: #0056b3;
-}
-body {
-    font-family: Arial, sans-serif;
-    background-color: #4799ae;
-    padding: 20px;
-}
-
-h2 {
     text-align: center;
-    color: #333;
-}
-
-form {
-    background-color: #000000;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-label {
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 5px;
-    display: block;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="password"] {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #f9f9f9;
-    transition: border-color 0.3s ease;
-}
-
-input[type="text"]:focus,
-input[type="email"]:focus,
-input[type="password"]:focus {
-    outline: none;
-    border-color: #007bff;
-}
-
-input[type="checkbox"] {
-    margin-right: 5px;
-    vertical-align: middle;
-}
-
-button[type="submit"] {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-button[type="submit"]:hover {
-    background-color: #0056b3;
-}
-
-p {
-    color: #666;
-    margin-bottom: 10px;
-}
-
-a {
-    color: #007bff;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: #4799ae;
-    padding: 20px;
-}
-
-h1, h2 {
-    text-align: center;
-    color: #333;
-}
-
-.question, .comment {
-    background-color: #fff;
-    padding: 15px;
-    margin-bottom: 15px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.question p, .comment p {
-    margin: 0;
-}
-
-.question p strong, .comment p strong {
-    font-weight: bold;
-}
-
-.comment {
-    border-left: 3px solid #007bff; /* Change color as per your preference */
-}
-
-.comment_form {
-    background-color: #fff;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.comment_form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #f9f9f9;
-    transition: border-color 0.3s ease;
-}
-
-.comment_form textarea:focus {
-    outline: none;
-    border-color: #007bff;
-}
-
-.comment_form button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.comment_form button:hover {
-    background-color: #0056b3;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: #4799ae;
-    padding: 20px;
-}
-
-h2 {
-    text-align: center;
-    color: #333;
-}
-
-form {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-label {
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 5px;
-    display: block;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="password"] {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #f9f9f9;
-    transition: border-color 0.3s ease;
-}
-
-input[type="text"]:focus,
-input[type="email"]:focus,
-input[type="password"]:focus {
-    outline: none;
-    border-color: #007bff;
-}
-
-input[type="checkbox"] {
-    margin-right: 5px;
-    vertical-align: middle;
-}
-
-button[type="submit"] {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-button[type="submit"]:hover {
-    background-color: #0000ff;
-}
-
-p {
-    color: #666;
-    margin-bottom: 10px;
-}
-
-a {
-    color: #007bff;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-.pagination-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px; /* Adjust the margin as needed */
-}
-
-.pagination-button {
-    
-        padding: 15px;
-        width: 100%;
-        font-size: 15px;
-        background: #7b4397;
-        border-radius: 30px;
-        font-weight: 800;
-        box-shadow: 5px 5px 0px 0px #000;
-        cursor: pointer;
+    border-radius: 30px;
+    box-shadow: 5px 5px 0px 0px #000;
    
 }
 
-.pagination-button:hover {
-    background-color: #000000;
-}
-
-.pagination-gap {
-    width: 100px; /* Adjust the width of the gap as needed */
-}
-
-
-body {
+.comment p {
     margin: 0;
-    font-family: Arial, sans-serif;
-    .sidebar {
-        background-color: transparent; /* Set background color to transparent */
-        padding: 0;
-        width: 250px;
-        position: fixed;
-        top: 0;
-        left: 0;
-        height: 30%;
-        overflow-x: hidden;
-    }
-    }
+    color:#000000
+}
+
+.comment p strong {
+    font-weight: bold;
+}
+
+.comment {
+    border-left: 3px solid #007bff; 
+}
+
+/* Styles for comment form */
+.comment_form {
+   
+    background-color:transparent;
+    padding: 1px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.comment_form textarea {
+    text-align: center;
+    width: auto;
+    height: 30px;
+    padding: auto; /* 2px is the border width (1px + 1px) of the textarea (top and bottom) */
+    margin-bottom: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #000000;
+    transition: border-color 0.3s ease;
+}
+
+.comment_form textarea:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+.comment_form button {
+    text-align: center;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.comment_form button:hover {
+    background-color: #0056b3;
+}
+
+/* Styles for sidebar */
+.sidebar {
+    background-color: transparent;
+    padding: 0;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 30%;
+    overflow-x: hidden;
+}
+
+.sidebar h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+.sidebar form {
+    margin-bottom: 20px;
     
-    .sidebar h2 {
-        font-size: 20px;
-        margin-bottom: 10px;
-        color: #000000;
-    }
-    
-    .sidebar form {
-        margin-bottom: 20px;
-    }
-    
-    .sidebar input[type="text"] {
-        width: calc(100% - 20px); /* Adjust width to fit within the sidebar */
-        padding: 10px;
-        margin-bottom: 10px;
-        background-color: transparent; /* Set background color to transparent */
-    }
-    
-    .sidebar button {
-        background-color: #4CAF50;
-        color: #000000;
-        padding: 10px;
-        border: none;
-        cursor: pointer;
-    }
-    
-    .sidebar button:hover {
-        background-color: #45a049;
-    }
-    
-    .content {
-        margin-left: 250px; /* Adjust this value to match the width of the sidebar */
-        padding: 20px;
-    }
+}
+
+.sidebar input[type="text"] {
+    width: calc(100% - 10px);
+    padding: 10px;
+    font-size: 20px;
+    text-size-adjust: 100%;
+    margin-bottom: 10px;
+    box-shadow: 0 0 10px rgba(222, 5, 30, 0.1);
+    background-color: transparent;
+}
+
+.sidebar button {
+    background-color: #4CAF50;
+    color: #000000;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.sidebar button:hover {
+    background-color: #45a049;
+}
+
+/* Styles for content */
+.content {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+/* Styles for pagination container */
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Styles for pagination button */
+.pagination-button {
+    padding: 15px;
+    width: 20%;
+    text-align: center;
+    font-size: 15px;
+    background:#7b4397;
+    border-radius: 30px;
+    font-weight: 800;
+    box-shadow: 5px 5px 0px 0px #000;
+    cursor: pointer;
+}
+
+.pagination-button:hover {
+    background-color: #2a5d00;
+}
+
+/* Styles for pagination gap */
+.pagination-gap {
+    width: calc(100% - 70px);
+}

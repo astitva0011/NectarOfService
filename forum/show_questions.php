@@ -1,3 +1,5 @@
+
+
 <?php
 include 'dbconnect.php';
 
@@ -5,7 +7,7 @@ include 'dbconnect.php';
 echo '<link rel="stylesheet" type="text/css" href="http://localhost/NectarOfService/forum/styles.css">';
 
 // Set the limit and offset for pagination
-$limit = 10;
+$limit = 4;
 $page = isset($_GET['page']) ? $_GET['page'] : 1;
 $offset = ($page - 1) * $limit;
 
