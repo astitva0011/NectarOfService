@@ -73,3 +73,9 @@ This project is licensed under the [MIT License](LICENSE).
 ## Contact
 
 For any questions or support, please reach out to gmail: astitv87@gmail.com , twitter: https://twitter.com/Astitva0011.
+
+## Signup_page
+
+![image](https://github.com/astitva0011/NectOfService/assets/113434018/b3b4fa36-1779-4c5c-a8fe-ebd5d36c55fb)
+
+
